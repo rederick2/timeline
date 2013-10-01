@@ -9,7 +9,7 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application 2',
+	'name'=>'Linea de Tiempo',
 
 	// preloading 'log' component
 	'preload'=>array('log'),

@@ -16,7 +16,7 @@ class FacebookController extends Controller
      * @param type $email string
      * @param type $session string
      */
-    public function actionLogin( $id = null , $name = null , $surname = null,$username = null, $email = 'rederick2@hotmail.com', $session = null, $token = null )
+    public function actionLogin( $id = null , $name = null , $surname = null,$username = null, $email = null, $session = null, $token = null )
     {
         if( !Yii::app()->request->isAjaxRequest )
         {

@@ -5,7 +5,7 @@
        'options' => array(
            'width'=>'100%',
            'height'=>'100%',
-           'source'=> 'http://localhost/miapp/timeline/JsonTimeline'
+           'source'=> Yii::app()->baseUrl.'/timeline/JsonTimeline'
           )
         ));
  

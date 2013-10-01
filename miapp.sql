@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `miapp`
+-- Base de datos: `timelinedb2013`
 --
-CREATE DATABASE IF NOT EXISTS `miapp` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `miapp`;
+CREATE DATABASE IF NOT EXISTS `timelinedb2013` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `timelinedb2013`;
 
 -- --------------------------------------------------------
 
@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `dates` (
 INSERT INTO `dates` (`id_date`, `id_timeline`, `id_asset`, `id_user`, `startDate`, `endDate`, `headline`, `text`, `tag`, `classname`) VALUES
 (1, 1, 3, 1, '2011,12,12', '2012,1,27', 'Fecha de Prueba', '<p>In true political fashion, his character rattles off common jargon heard from people running for office.</p>', NULL, NULL),
 (2, 1, 4, 1, '2011,1,12', '2012,1,13', 'Fecha de Prueba 2', '<p>In true political fashion, his character rattles off common jargon heard from people running for office.</p>', NULL, NULL),
-(5, 1, 7, 1, '2011,1,12', '2012,1,13', 'Mi cumple', 'Este fue un bonito dia <a href="/miapp/rederick2013">by rederick2013</a>', NULL, NULL);
+(5, 1, 7, 1, '2011,1,12', '2012,1,13', 'Mi cumple', 'Este fue un bonito dia <a href="/timeline/rederick2013">by rederick2013</a>', NULL, NULL);
 
 -- --------------------------------------------------------
 

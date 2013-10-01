@@ -36,9 +36,9 @@ If you have business inquiries or other questions, please fill out the following
 
 	<?php echo $form->errorSummary($model); ?>
 
-    <?php echo $form->textFieldRow($model,'startDate'); ?>
+    <?php echo $form->textFieldRow($model,'startDate' , array('placeholder' => 'aaaa , mm , dd')); ?>
 
-    <?php echo $form->textFieldRow($model,'endDate'); ?>
+    <?php echo $form->textFieldRow($model,'endDate' , array('placeholder' => 'aaaa , mm , dd')); ?>
 
     <?php echo $form->textFieldRow($model,'headline'); ?>
 

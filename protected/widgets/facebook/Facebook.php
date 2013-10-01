@@ -36,7 +36,7 @@ class Facebook extends CWidget{
     private function renderJavascript()
     {
 $script=<<<EOL
-        window.fbAsyncInit = function() {
+        ; window.fbAsyncInit = function() {
             FB.init({   appId: '{$this->appId}', 
                         status: {$this->status}, 
                         cookie: {$this->cookie},

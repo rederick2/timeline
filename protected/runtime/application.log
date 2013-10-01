@@ -1,0 +1,1666 @@
+2013/09/18 22:12:12 [error] [exception.CException] exception 'CException' with message 'Property "User.name" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('name')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('name')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(User), 'name')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(User), 'name', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(User), 'name', Array)
+#5 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(181): CActiveForm->textField(Object(User), 'name', Array)
+#6 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInput.php(230): TbInputHorizontal->textField()
+#7 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(24): TbInput->run()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(173): TbInputHorizontal->run()
+#9 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): CBaseController->widget('bootstrap.widge...', Array)
+#10 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(186): TbActiveForm->inputRow('text', Object(User), 'name', NULL, Array)
+#11 C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php(41): TbActiveForm->textFieldRow(Object(User), 'name', Array)
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\mia...')
+#13 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\mia...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(874): CBaseController->renderFile('C:\wamp\www\mia...', Array, true)
+#15 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('profile/editar', Array, true)
+#16 C:\wamp\www\miapp\protected\controllers\SiteController.php(135): CController->render('profile/editar', Array)
+#17 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#18 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('editprofile')
+#22 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/editProfil...')
+#23 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/miapp/site/editProfile
+HTTP_REFERER=http://localhost/miapp/site/contact
+---
+2013/09/18 22:13:26 [error] [exception.CException] exception 'CException' with message 'Property "User.email" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('email')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('email')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(User), 'email')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(User), 'email', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(User), 'email', Array)
+#5 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(181): CActiveForm->textField(Object(User), 'email', Array)
+#6 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInput.php(230): TbInputHorizontal->textField()
+#7 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(24): TbInput->run()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(173): TbInputHorizontal->run()
+#9 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): CBaseController->widget('bootstrap.widge...', Array)
+#10 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(186): TbActiveForm->inputRow('text', Object(User), 'email', NULL, Array)
+#11 C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php(43): TbActiveForm->textFieldRow(Object(User), 'email')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\mia...')
+#13 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\mia...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(874): CBaseController->renderFile('C:\wamp\www\mia...', Array, true)
+#15 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('profile/editar', Array, true)
+#16 C:\wamp\www\miapp\protected\controllers\SiteController.php(135): CController->render('profile/editar', Array)
+#17 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#18 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('editprofile')
+#22 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/editProfil...')
+#23 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/miapp/site/editProfile
+HTTP_REFERER=http://localhost/miapp/site/contact
+---
+2013/09/18 22:14:00 [error] [exception.CException] exception 'CException' with message 'Property "User.verifyCode" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('verifyCode')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('verifyCode')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(User), 'verifyCode')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(User), 'verifyCode', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(User), 'verifyCode', Array)
+#5 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(196): CActiveForm->textField(Object(User), 'verifyCode', Array)
+#6 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInput.php(234): TbInputHorizontal->captcha()
+#7 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(24): TbInput->run()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(173): TbInputHorizontal->run()
+#9 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): CBaseController->widget('bootstrap.widge...', Array)
+#10 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(211): TbActiveForm->inputRow('captcha', Object(User), 'verifyCode', NULL, Array)
+#11 C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php(52): TbActiveForm->captchaRow(Object(User), 'verifyCode', Array)
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\mia...')
+#13 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\mia...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(874): CBaseController->renderFile('C:\wamp\www\mia...', Array, true)
+#15 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('profile/editar', Array, true)
+#16 C:\wamp\www\miapp\protected\controllers\SiteController.php(135): CController->render('profile/editar', Array)
+#17 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#18 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('editprofile')
+#22 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/editProfil...')
+#23 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/miapp/site/editProfile
+HTTP_REFERER=http://localhost/miapp/site/contact
+---
+2013/09/18 22:15:57 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2255): tag()
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#4 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(181): TbActiveForm->textField()
+#5 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInput.php(230): TbInputHorizontal->textField()
+#6 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(24): TbInputHorizontal->run()
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(173): TbInputHorizontal->run()
+#8 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): SiteController->widget()
+#9 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(186): TbActiveForm->inputRow()
+#10 C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php(41): TbActiveForm->textFieldRow()
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#13 C:\wamp\www\yii\framework\web\CController.php(874): SiteController->renderFile()
+#14 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#15 C:\wamp\www\miapp\protected\controllers\SiteController.php(135): SiteController->render()
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#19 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#20 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#21 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/editProfile
+in C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php (181)
+in C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInput.php (230)
+in C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php (24)
+2013/09/18 22:52:01 [error] [exception.CException] exception 'CException' with message 'UserForm has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in C:\wamp\www\yii\framework\base\CModel.php:289
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModel.php(260): CModel->createValidators()
+#1 C:\wamp\www\yii\framework\base\CModel.php(547): CModel->getValidators()
+#2 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(564): CModel->getSafeAttributeNames()
+#3 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(359): CActiveForm->errorSummary(Object(UserForm), NULL, NULL, Array)
+#4 C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php(39): TbActiveForm->errorSummary(Object(UserForm))
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\mia...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\mia...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(874): CBaseController->renderFile('C:\wamp\www\mia...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('profile/editar', Array, true)
+#9 C:\wamp\www\miapp\protected\controllers\SiteController.php(137): CController->render('profile/editar', Array)
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#11 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('editprofile')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/editProfil...')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/miapp/site/editProfile
+HTTP_REFERER=http://localhost/miapp/site/index
+---
+2013/09/18 22:53:40 [error] [exception.CException] exception 'CException' with message 'UserForm has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in C:\wamp\www\yii\framework\base\CModel.php:289
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModel.php(260): CModel->createValidators()
+#1 C:\wamp\www\yii\framework\base\CModel.php(547): CModel->getValidators()
+#2 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(564): CModel->getSafeAttributeNames()
+#3 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(359): CActiveForm->errorSummary(Object(UserForm), NULL, NULL, Array)
+#4 C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php(39): TbActiveForm->errorSummary(Object(UserForm))
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\mia...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\mia...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(874): CBaseController->renderFile('C:\wamp\www\mia...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('profile/editar', Array, true)
+#9 C:\wamp\www\miapp\protected\controllers\SiteController.php(137): CController->render('profile/editar', Array)
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#11 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('editprofile')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/editProfil...')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/miapp/site/editProfile
+HTTP_REFERER=http://localhost/miapp/site/index
+---
+2013/09/18 22:56:04 [error] [exception.CException] exception 'CException' with message 'Property "UserForm.picture" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php(57): CComponent->__get('picture')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\mia...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\mia...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(874): CBaseController->renderFile('C:\wamp\www\mia...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('profile/editar', Array, true)
+#5 C:\wamp\www\miapp\protected\controllers\SiteController.php(137): CController->render('profile/editar', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('editprofile')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/editProfil...')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/miapp/site/editProfile
+HTTP_REFERER=http://localhost/miapp/site/index
+---
+2013/09/18 22:58:43 [warning] [application] Failed to set unsafe attribute "first_name" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (117)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/18 22:59:08 [warning] [application] Failed to set unsafe attribute "first_name" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (117)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/18 23:02:39 [error] [php] Array to string conversion (C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbAlert.php:124)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(874): SiteController->renderFile()
+#3 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#4 C:\wamp\www\miapp\protected\controllers\SiteController.php(138): SiteController->render()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/editProfile
+in C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbAlert.php (124)
+in C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php (18)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (138)
+2013/09/18 23:02:52 [error] [php] Trying to get property of non-object (C:\wamp\www\miapp\protected\controllers\SiteController.php:128)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/editProfile
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (128)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/18 23:08:27 [error] [php] Undefined index: firts_name (C:\wamp\www\miapp\protected\controllers\SiteController.php:124)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/editProfile
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (124)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/18 23:25:03 [error] [php] Creating default object from empty value (C:\wamp\www\miapp\protected\controllers\SiteController.php:128)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/editProfile
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (128)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/18 23:28:22 [error] [php] Trying to get property of non-object (C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php:47)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(874): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\miapp\protected\controllers\SiteController.php(141): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/editProfile
+in C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php (47)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (141)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/18 23:28:30 [error] [php] Trying to get property of non-object (C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php:47)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(874): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\miapp\protected\controllers\SiteController.php(141): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/editProfile
+in C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php (47)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (141)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/18 23:28:33 [error] [php] Trying to get property of non-object (C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php:47)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(874): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\miapp\protected\controllers\SiteController.php(141): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/editProfile
+in C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php (47)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (141)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/18 23:28:39 [error] [php] Trying to get property of non-object (C:\wamp\www\miapp\themes\bootstrap\views\layouts\main.php:23)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 C:\wamp\www\miapp\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\wamp\www\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\wamp\www\miapp\protected\controllers\SiteController.php(63): SiteController->render()
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/
+in C:\wamp\www\miapp\themes\bootstrap\views\layouts\main.php (23)
+in C:\wamp\www\miapp\protected\views\layouts\column1.php (6)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (63)
+2013/09/18 23:29:06 [error] [php] Trying to get property of non-object (C:\wamp\www\miapp\themes\bootstrap\views\layouts\main.php:23)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 C:\wamp\www\miapp\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\wamp\www\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\wamp\www\miapp\protected\controllers\SiteController.php(63): SiteController->render()
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/
+in C:\wamp\www\miapp\themes\bootstrap\views\layouts\main.php (23)
+in C:\wamp\www\miapp\protected\views\layouts\column1.php (6)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (63)
+2013/09/18 23:29:16 [error] [php] Trying to get property of non-object (C:\wamp\www\miapp\themes\bootstrap\views\layouts\main.php:23)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 C:\wamp\www\miapp\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\wamp\www\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\wamp\www\miapp\protected\controllers\SiteController.php(63): SiteController->render()
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/
+in C:\wamp\www\miapp\themes\bootstrap\views\layouts\main.php (23)
+in C:\wamp\www\miapp\protected\views\layouts\column1.php (6)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (63)
+2013/09/19 15:08:33 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.rememberMe" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CComponent->__get('rememberMe')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1743): CHtml::resolveValue(Object(LoginForm), 'rememberMe')
+#2 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(831): CHtml::activeCheckBox(Object(LoginForm), 'rememberMe', Array)
+#3 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(51): CActiveForm->checkBox(Object(LoginForm), 'rememberMe', Array)
+#4 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInput.php(189): TbInputHorizontal->checkBox()
+#5 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(24): TbInput->run()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(173): TbInputHorizontal->run()
+#7 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): CBaseController->widget('bootstrap.widge...', Array)
+#8 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(73): TbActiveForm->inputRow('checkbox', Object(LoginForm), 'rememberMe', NULL, Array)
+#9 C:\wamp\www\miapp\themes\bootstrap\views\site\login.php(40): TbActiveForm->checkBoxRow(Object(LoginForm), 'rememberMe')
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\mia...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\mia...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(874): CBaseController->renderFile('C:\wamp\www\mia...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#14 C:\wamp\www\miapp\protected\controllers\SiteController.php(167): CController->render('login', Array)
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#16 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#20 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#21 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/miapp/site/login
+HTTP_REFERER=http://localhost/miapp/
+---
+2013/09/19 15:27:24 [warning] [application] Failed to set unsafe attribute "password" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (117)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 15:28:58 [warning] [application] Failed to set unsafe attribute "password" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (117)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 15:28:58 [error] [php] Undefined index: password (C:\wamp\www\miapp\protected\controllers\SiteController.php:128)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/editProfile
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (128)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 16:11:52 [error] [php] Trying to get property of non-object (C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php:47)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(874): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\miapp\protected\controllers\SiteController.php(175): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegisterProfile()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/RegisterProfile
+in C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php (47)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (175)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 16:12:33 [error] [php] Undefined variable: user (C:\wamp\www\miapp\themes\bootstrap\views\site\profile\register.php:61)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(874): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\miapp\protected\controllers\SiteController.php(175): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegisterProfile()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/RegisterProfile
+in C:\wamp\www\miapp\themes\bootstrap\views\site\profile\register.php (61)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (175)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 16:55:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "path".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('path')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('path')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/path/to/cu...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/path/to/current/image
+HTTP_REFERER=http://localhost/miapp/site/RegisterProfile
+---
+2013/09/19 16:56:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/upload/ima...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/upload/images
+HTTP_REFERER=http://localhost/miapp/site/RegisterProfile
+---
+2013/09/19 16:57:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploads".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('uploads')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('uploads')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/uploads')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/uploads
+HTTP_REFERER=http://localhost/miapp/site/RegisterProfile
+---
+2013/09/19 16:58:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploads".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('uploads')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('uploads')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/uploads')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/uploads
+HTTP_REFERER=http://localhost/miapp/site/RegisterProfile
+---
+2013/09/19 16:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uploads".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('uploads')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('uploads')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/uploads/im...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/uploads/image.jpg
+HTTP_REFERER=http://localhost/miapp/site/RegisterProfile
+---
+2013/09/19 17:21:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('site')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('site')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/site/Uploa...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/site/Upload
+HTTP_REFERER=http://localhost/miapp/site/RegisterProfile
+---
+2013/09/19 17:36:09 [error] [exception.CException] exception 'CException' with message 'Property "UserForm.picture" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CComponent->__get('picture')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(UserForm), 'picture')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(UserForm), 'picture', Array)
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(UserForm), 'picture', Array)
+#4 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(181): CActiveForm->textField(Object(UserForm), 'picture', Array)
+#5 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInput.php(230): TbInputHorizontal->textField()
+#6 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(24): TbInput->run()
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(173): TbInputHorizontal->run()
+#8 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): CBaseController->widget('bootstrap.widge...', Array)
+#9 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(186): TbActiveForm->inputRow('text', Object(UserForm), 'picture', NULL, Array)
+#10 C:\wamp\www\miapp\themes\bootstrap\views\site\profile\register.php(57): TbActiveForm->textFieldRow(Object(UserForm), 'picture', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\mia...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\mia...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(874): CBaseController->renderFile('C:\wamp\www\mia...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('profile/registe...', Array, true)
+#15 C:\wamp\www\miapp\protected\controllers\SiteController.php(175): CController->render('profile/registe...', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegisterProfile()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('registerprofile')
+#21 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/RegisterPr...')
+#22 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/miapp/site/RegisterProfile
+HTTP_REFERER=http://localhost/miapp/site/login
+---
+2013/09/19 17:40:00 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "hiddenFieldRow".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\miapp\themes\bootstrap\views\site\profile\register.php(57): CComponent->__call('hiddenFieldRow', Array)
+#1 C:\wamp\www\miapp\themes\bootstrap\views\site\profile\register.php(57): TbActiveForm->hiddenFieldRow(Object(UserForm), 'picture', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\mia...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\mia...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(874): CBaseController->renderFile('C:\wamp\www\mia...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('profile/registe...', Array, true)
+#6 C:\wamp\www\miapp\protected\controllers\SiteController.php(175): CController->render('profile/registe...', Array)
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegisterProfile()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('registerprofile')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/RegisterPr...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/miapp/site/RegisterProfile
+HTTP_REFERER=http://localhost/miapp/site/login
+---
+2013/09/19 17:57:33 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 19:52:27 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 19:57:27 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 19:57:27 [error] [php] Undefined variable: email (C:\wamp\www\miapp\protected\controllers\SiteController.php:154)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/RegisterProfile
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (154)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 19:57:48 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 19:58:28 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:09:02 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:09:02 [error] [exception.CException] exception 'CException' with message 'UserForm and its behaviors do not have a method or closure named "getTableSchema".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\validators\CExistValidator.php(86): CComponent->__call('getTableSchema', Array)
+#1 C:\wamp\www\yii\framework\validators\CExistValidator.php(86): UserForm->getTableSchema()
+#2 C:\wamp\www\yii\framework\validators\CValidator.php(213): CExistValidator->validateAttribute(Object(UserForm), 'username')
+#3 C:\wamp\www\yii\framework\base\CModel.php(159): CValidator->validate(Object(UserForm), NULL)
+#4 C:\wamp\www\miapp\protected\controllers\SiteController.php(151): CModel->validate()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegisterProfile()
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('registerprofile')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/RegisterPr...')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/miapp/site/RegisterProfile
+HTTP_REFERER=http://localhost/miapp/site/RegisterProfile
+---
+2013/09/19 20:11:23 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:11:26 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:11:31 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:11:55 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:14:27 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:14:37 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:15:43 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:15:55 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:16:10 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:18:59 [warning] [application] Failed to set unsafe attribute "password_repeat" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:18:59 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:19:54 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:20:23 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/19 20:32:48 [warning] [application] Failed to set unsafe attribute "picture" of "UserForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (150)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 15:23:22 [error] [php] Undefined variable: model (C:\wamp\www\miapp\themes\bootstrap\views\site\index.php:71)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(874): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\miapp\protected\controllers\SiteController.php(63): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/
+in C:\wamp\www\miapp\themes\bootstrap\views\site\index.php (71)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (63)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 15:57:12 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (209)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 15:57:32 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (209)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 15:57:57 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (209)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('site')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('site')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/site/login')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/site/login
+HTTP_REFERER=http://localhost/miapp/site/index
+---
+2013/09/20 16:02:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('site')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('site')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/site/login')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/site/login
+HTTP_REFERER=http://localhost/miapp/site/index
+---
+2013/09/20 16:06:52 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (209)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:07:00 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (209)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:09:55 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (209)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:17:38 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:17:40 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:17:45 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:17:57 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:19:22 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:19:23 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:19:25 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:19:27 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (209)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:19:45 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:23:51 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:23:52 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:24:17 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:24:19 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:24:22 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:24:37 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:24:38 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:24:45 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:24:48 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:24:48 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (209)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:26:35 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:26:37 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:26:41 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:26:46 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:49:30 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 16:55:32 [error] [php] Undefined variable: model (C:\wamp\www\miapp\themes\bootstrap\views\layouts\main.php:73)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 C:\wamp\www\miapp\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\wamp\www\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\wamp\www\miapp\protected\controllers\SiteController.php(66): SiteController->render()
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/
+in C:\wamp\www\miapp\themes\bootstrap\views\layouts\main.php (73)
+in C:\wamp\www\miapp\protected\views\layouts\column1.php (6)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (66)
+2013/09/20 17:04:39 [error] [php] Undefined variable: model (C:\wamp\www\miapp\themes\bootstrap\views\layouts\main.php:74)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 C:\wamp\www\miapp\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\wamp\www\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\wamp\www\miapp\protected\controllers\SiteController.php(66): SiteController->render()
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/
+in C:\wamp\www\miapp\themes\bootstrap\views\layouts\main.php (74)
+in C:\wamp\www\miapp\protected\views\layouts\column1.php (6)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (66)
+2013/09/20 17:05:06 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 17:05:07 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 17:05:15 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 17:05:15 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (209)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 17:05:24 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 17:05:26 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 17:05:26 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (209)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 17:15:17 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 17:15:20 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 17:15:24 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 17:15:35 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 17:15:46 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (202)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/20 21:17:10 [error] [exception.CException] exception 'CException' with message 'Property "User.password_repeat" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password_repeat')
+#1 C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php(57): CActiveRecord->__get('password_repeat')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\mia...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\mia...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(874): CBaseController->renderFile('C:\wamp\www\mia...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('profile/editar', Array, true)
+#6 C:\wamp\www\miapp\protected\controllers\SiteController.php(145): CController->render('profile/editar', Array)
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('editprofile')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/editProfil...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/miapp/site/editProfile
+HTTP_REFERER=http://localhost/miapp/site/index
+---
+2013/09/27 22:21:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/view')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/1
+---
+2013/09/27 22:23:46 [error] [php] Undefined index: id (C:\wamp\www\miapp\protected\controllers\SiteController.php:74)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/1
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (74)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/27 22:25:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('user')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('user')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/user
+---
+2013/09/27 22:25:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('user')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('user')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/user/1
+---
+2013/09/27 22:26:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/view".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/miapp/user/1
+---
+2013/09/27 22:26:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('user')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('user')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/user/1
+---
+2013/09/27 22:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "rederick2".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('rederick2')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/miapp/rederick2
+---
+2013/09/27 22:27:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "rederick2013".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('rederick2013')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/miapp/rederick2013
+---
+2013/09/27 22:27:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rederick2013".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('rederick2013')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('rederick2013')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/rederick20...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/rederick2013
+---
+2013/09/27 22:32:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rederick2013".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('rederick2013')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('rederick2013')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/rederick20...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/site/rederick2013
+---
+2013/09/27 22:33:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('user')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('user')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/rederick2013
+---
+2013/09/27 22:33:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('user')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('user')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/miapp/rederick2013
+---
+2013/09/27 22:36:17 [error] [php] Trying to get property of non-object (C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php:47)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(874): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\miapp\protected\controllers\SiteController.php(177): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/editProfile
+in C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php (47)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (177)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/27 22:36:20 [error] [php] Trying to get property of non-object (C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php:47)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(874): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\miapp\protected\controllers\SiteController.php(177): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEditProfile()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/site/editProfile
+in C:\wamp\www\miapp\themes\bootstrap\views\site\profile\editar.php (47)
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (177)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/27 22:57:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "rederick2013/friends".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('rederick2013/fr...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/miapp/rederick2013/friends
+---
+2013/09/30 17:01:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "optional-32x32px.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('optional-32x32p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/miapp/optional-32x32px.jpg
+HTTP_REFERER=http://localhost/miapp/
+---
+2013/09/30 21:21:01 [error] [php] Undefined variable: js (C:\wamp\www\yii\framework\web\CController.php:821)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#3 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/
+in C:\wamp\www\miapp\protected\controllers\SiteController.php (66)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 22:12:48 [error] [exception.CException] exception 'CException' with message 'TimelineController cannot find the requested view "timeline/create_date".' in C:\wamp\www\yii\framework\web\CController.php:884
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('timeline/create...', Array, true)
+#1 C:\wamp\www\miapp\protected\controllers\TimelineController.php(77): CController->render('timeline/create...', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionCreateDate()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createdate')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/create...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/miapp/timeline/createDate
+HTTP_REFERER=http://localhost/miapp/
+---
+2013/09/30 22:13:44 [error] [exception.CException] exception 'CException' with message 'TimelineController cannot find the requested view "site/timeline/create_date".' in C:\wamp\www\yii\framework\web\CController.php:884
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('site/timeline/c...', Array, true)
+#1 C:\wamp\www\miapp\protected\controllers\TimelineController.php(77): CController->render('site/timeline/c...', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionCreateDate()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createdate')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/create...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/miapp/timeline/createDate
+HTTP_REFERER=http://localhost/miapp/
+---
+2013/09/30 22:14:00 [error] [exception.CException] exception 'CException' with message 'TimelineController cannot find the requested view "timeline/create_date".' in C:\wamp\www\yii\framework\web\CController.php:884
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('timeline/create...', Array, true)
+#1 C:\wamp\www\miapp\protected\controllers\TimelineController.php(77): CController->render('timeline/create...', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionCreateDate()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('createdate')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/create...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/miapp/timeline/createDate
+HTTP_REFERER=http://localhost/miapp/
+---
+2013/09/30 22:15:51 [error] [php] include(media.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii\framework\validators\CValidator.php(186): import()
+#1 C:\wamp\www\yii\framework\base\CModel.php(287): createValidator()
+#2 C:\wamp\www\yii\framework\base\CModel.php(260): DateForm->createValidators()
+#3 C:\wamp\www\yii\framework\base\CModel.php(547): DateForm->getValidators()
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(564): DateForm->getSafeAttributeNames()
+#5 C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php(359): TbActiveForm->errorSummary()
+#6 C:\wamp\www\miapp\themes\bootstrap\views\timeline\create_date.php(37): TbActiveForm->errorSummary()
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(95): TimelineController->renderInternal()
+#9 C:\wamp\www\yii\framework\web\CController.php(875): TimelineController->renderFile()
+#10 C:\wamp\www\yii\framework\web\CController.php(782): TimelineController->renderPartial()
+#11 C:\wamp\www\miapp\protected\controllers\TimelineController.php(77): TimelineController->render()
+#12 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionCreateDate()
+#13 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\wamp\www\yii\framework\web\CController.php(286): TimelineController->runAction()
+#15 C:\wamp\www\yii\framework\web\CController.php(265): TimelineController->runActionWithFilters()
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(282): TimelineController->run()
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/timeline/createDate
+in C:\wamp\www\miapp\protected\extensions\bootstrap\widgets\TbActiveForm.php (359)
+in C:\wamp\www\miapp\themes\bootstrap\views\timeline\create_date.php (37)
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (77)
+2013/09/30 22:29:52 [warning] [application] Failed to set unsafe attribute "tag" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 22:29:52 [warning] [application] Failed to set unsafe attribute "credit" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 22:29:52 [warning] [application] Failed to set unsafe attribute "caption" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 22:31:52 [warning] [application] Failed to set unsafe attribute "tag" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 22:31:52 [warning] [application] Failed to set unsafe attribute "credit" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 22:31:52 [warning] [application] Failed to set unsafe attribute "caption" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 22:33:09 [warning] [application] Failed to set unsafe attribute "tag" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 22:33:09 [warning] [application] Failed to set unsafe attribute "credit" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 22:33:09 [warning] [application] Failed to set unsafe attribute "caption" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 22:52:21 [error] [php] include(Date.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(182): model()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(230): CActiveFinder->getModel()
+#3 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct()
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(280): Timeline->getActiveFinder()
+#6 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(143): Timeline->getRelated()
+#7 C:\wamp\www\miapp\protected\controllers\TimelineController.php(144): Timeline->__get()
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\wamp\www\yii\framework\web\CController.php(286): TimelineController->runAction()
+#11 C:\wamp\www\yii\framework\web\CController.php(265): TimelineController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): TimelineController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/timeline/JsonTimeline
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (144)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 22:56:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'assetFg.asset' in 'where clause'. The SQL statement executed was: SELECT `assetFg`.`id_asset` AS `t1_c0`, `assetFg`.`media` AS `t1_c1`, `assetFg`.`credit` AS `t1_c2`, `assetFg`.`caption` AS `t1_c3` FROM `assets` `assetFg`  WHERE (`assetFg`.`asset`=:ypl0).
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (143)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 22:56:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'assetFg.asset' in 'where clause'. The SQL statement executed was: SELECT `assetFg`.`id_asset` AS `t1_c0`, `assetFg`.`media` AS `t1_c1`, `assetFg`.`credit` AS `t1_c2`, `assetFg`.`caption` AS `t1_c3` FROM `assets` `assetFg`  WHERE (`assetFg`.`asset`=:ypl0)' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(507): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(163): CJoinElement->lazyFind(Object(Timeline))
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(281): CActiveFinder->lazyFind(Object(Timeline))
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('assetFg')
+#6 C:\wamp\www\miapp\protected\controllers\TimelineController.php(143): CActiveRecord->__get('assetFg')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/09/30 23:00:29 [error] [exception.CException] exception 'CException' with message 'Property "Timeline.dates" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('dates')
+#1 C:\wamp\www\miapp\protected\controllers\TimelineController.php(144): CActiveRecord->__get('dates')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/09/30 23:04:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dates.id_t' in 'where clause'. The SQL statement executed was: SELECT `dates`.`id_date` AS `t1_c0`, `dates`.`id_timeline` AS `t1_c1`, `dates`.`id_asset` AS `t1_c2`, `dates`.`id_user` AS `t1_c3`, `dates`.`startDate` AS `t1_c4`, `dates`.`endDate` AS `t1_c5`, `dates`.`headline` AS `t1_c6`, `dates`.`text` AS `t1_c7`, `dates`.`tag` AS `t1_c8`, `dates`.`classname` AS `t1_c9` FROM `dates` `dates`  WHERE (`dates`.`id_t`=:ypl0).
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (144)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 23:04:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dates.id_t' in 'where clause'. The SQL statement executed was: SELECT `dates`.`id_date` AS `t1_c0`, `dates`.`id_timeline` AS `t1_c1`, `dates`.`id_asset` AS `t1_c2`, `dates`.`id_user` AS `t1_c3`, `dates`.`startDate` AS `t1_c4`, `dates`.`endDate` AS `t1_c5`, `dates`.`headline` AS `t1_c6`, `dates`.`text` AS `t1_c7`, `dates`.`tag` AS `t1_c8`, `dates`.`classname` AS `t1_c9` FROM `dates` `dates`  WHERE (`dates`.`id_t`=:ypl0)' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(507): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(163): CJoinElement->lazyFind(Object(Timeline))
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(281): CActiveFinder->lazyFind(Object(Timeline))
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('dates')
+#6 C:\wamp\www\miapp\protected\controllers\TimelineController.php(144): CActiveRecord->__get('dates')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/09/30 23:16:08 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "id_timeline" is not defined in active record class "TimelineDate".' in C:\wamp\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'id_timeline')
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(TimelineDate), Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\miapp\protected\controllers\TimelineController.php(139): CActiveRecord->findAll()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/09/30 23:17:19 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "id_timeline" is not defined in active record class "TimelineDate".' in C:\wamp\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'id_timeline')
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(TimelineDate), Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\miapp\protected\controllers\TimelineController.php(139): CActiveRecord->findAll()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/09/30 23:17:19 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "id_timeline" is not defined in active record class "TimelineDate".' in C:\wamp\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'id_timeline')
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(TimelineDate), Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\miapp\protected\controllers\TimelineController.php(139): CActiveRecord->findAll()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/09/30 23:35:48 [error] [php] Non-static method TimelineDate::convertModelToArray() should not be called statically, assuming $this from incompatible context (C:\wamp\www\miapp\protected\controllers\TimelineController.php:141)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): TimelineController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): TimelineController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): TimelineController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/timeline/JsonTimeline
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (141)
+in C:\wamp\www\miapp\index.php (13)
+2013/09/30 23:51:49 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "assetFg" is not defined in active record class "Timeline".' in C:\wamp\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'assetFg')
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Timeline), Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/09/30 23:52:16 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "assetFg" is not defined in active record class "Timeline".' in C:\wamp\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'assetFg')
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Timeline), Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/09/30 23:52:19 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "assetFg" is not defined in active record class "Timeline".' in C:\wamp\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'assetFg')
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Timeline), Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/10/01 00:32:53 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "asset" is not defined in active record class "TimelineDate".' in C:\wamp\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'date.asset')
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Timeline), Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/10/01 00:33:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'asset'. The SQL statement executed was: SELECT `t`.`id_timeline` AS `t0_c0`, `t`.`headline` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`type` AS `t0_c3`, `t`.`id_asset` AS `t0_c4`, `date`.`id_date` AS `t1_c0`, `date`.`id_timeline` AS `t1_c1`, `date`.`id_asset` AS `t1_c2`, `date`.`id_user` AS `t1_c3`, `date`.`startDate` AS `t1_c4`, `date`.`endDate` AS `t1_c5`, `date`.`headline` AS `t1_c6`, `date`.`text` AS `t1_c7`, `date`.`tag` AS `t1_c8`, `date`.`classname` AS `t1_c9`, `asset`.`id_asset` AS `t2_c0`, `asset`.`media` AS `t2_c1`, `asset`.`credit` AS `t2_c2`, `asset`.`caption` AS `t2_c3`, `asset`.`id_asset` AS `t3_c0`, `asset`.`media` AS `t3_c1`, `asset`.`credit` AS `t3_c2`, `asset`.`caption` AS `t3_c3` FROM `timelines` `t`  LEFT OUTER JOIN `dates` `date` ON (`date`.`id_timeline`=`t`.`id_timeline`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`date`.`id_date`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`t`.`id_timeline`) .
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (138)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 00:33:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'asset'. The SQL statement executed was: SELECT `t`.`id_timeline` AS `t0_c0`, `t`.`headline` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`type` AS `t0_c3`, `t`.`id_asset` AS `t0_c4`, `date`.`id_date` AS `t1_c0`, `date`.`id_timeline` AS `t1_c1`, `date`.`id_asset` AS `t1_c2`, `date`.`id_user` AS `t1_c3`, `date`.`startDate` AS `t1_c4`, `date`.`endDate` AS `t1_c5`, `date`.`headline` AS `t1_c6`, `date`.`text` AS `t1_c7`, `date`.`tag` AS `t1_c8`, `date`.`classname` AS `t1_c9`, `asset`.`id_asset` AS `t2_c0`, `asset`.`media` AS `t2_c1`, `asset`.`credit` AS `t2_c2`, `asset`.`caption` AS `t2_c3`, `asset`.`id_asset` AS `t3_c0`, `asset`.`media` AS `t3_c1`, `asset`.`credit` AS `t3_c2`, `asset`.`caption` AS `t3_c3` FROM `timelines` `t`  LEFT OUTER JOIN `dates` `date` ON (`date`.`id_timeline`=`t`.`id_timeline`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`date`.`id_date`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`t`.`id_timeline`) ' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/10/01 00:34:55 [error] [exception.CDbException] exception 'CDbException' with message 'The relation "asset" in active record class "TimelineDate" is specified with an invalid foreign key "id_date". There is no such column in the table "assets".' in C:\wamp\www\yii\framework\db\ar\CActiveFinder.php:1096
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(1067): CJoinElement->joinOneMany(Object(CJoinElement), Array, Object(CJoinElement), Object(CJoinElement))
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(1295): CJoinElement->getJoinCondition()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(790): CJoinQuery->join(Object(CJoinElement))
+#3 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(791): CJoinElement->buildQuery(Object(CJoinQuery))
+#4 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(435): CJoinElement->buildQuery(Object(CJoinQuery))
+#5 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#6 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#7 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#8 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/10/01 00:35:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'asset'. The SQL statement executed was: SELECT `t`.`id_timeline` AS `t0_c0`, `t`.`headline` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`type` AS `t0_c3`, `t`.`id_asset` AS `t0_c4`, `date`.`id_date` AS `t1_c0`, `date`.`id_timeline` AS `t1_c1`, `date`.`id_asset` AS `t1_c2`, `date`.`id_user` AS `t1_c3`, `date`.`startDate` AS `t1_c4`, `date`.`endDate` AS `t1_c5`, `date`.`headline` AS `t1_c6`, `date`.`text` AS `t1_c7`, `date`.`tag` AS `t1_c8`, `date`.`classname` AS `t1_c9`, `asset`.`id_asset` AS `t2_c0`, `asset`.`media` AS `t2_c1`, `asset`.`credit` AS `t2_c2`, `asset`.`caption` AS `t2_c3`, `asset`.`id_asset` AS `t3_c0`, `asset`.`media` AS `t3_c1`, `asset`.`credit` AS `t3_c2`, `asset`.`caption` AS `t3_c3` FROM `timelines` `t`  LEFT OUTER JOIN `dates` `date` ON (`date`.`id_timeline`=`t`.`id_timeline`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`date`.`id_date`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`t`.`id_timeline`) .
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (138)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 00:35:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'asset'. The SQL statement executed was: SELECT `t`.`id_timeline` AS `t0_c0`, `t`.`headline` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`type` AS `t0_c3`, `t`.`id_asset` AS `t0_c4`, `date`.`id_date` AS `t1_c0`, `date`.`id_timeline` AS `t1_c1`, `date`.`id_asset` AS `t1_c2`, `date`.`id_user` AS `t1_c3`, `date`.`startDate` AS `t1_c4`, `date`.`endDate` AS `t1_c5`, `date`.`headline` AS `t1_c6`, `date`.`text` AS `t1_c7`, `date`.`tag` AS `t1_c8`, `date`.`classname` AS `t1_c9`, `asset`.`id_asset` AS `t2_c0`, `asset`.`media` AS `t2_c1`, `asset`.`credit` AS `t2_c2`, `asset`.`caption` AS `t2_c3`, `asset`.`id_asset` AS `t3_c0`, `asset`.`media` AS `t3_c1`, `asset`.`credit` AS `t3_c2`, `asset`.`caption` AS `t3_c3` FROM `timelines` `t`  LEFT OUTER JOIN `dates` `date` ON (`date`.`id_timeline`=`t`.`id_timeline`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`date`.`id_date`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`t`.`id_timeline`) ' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/10/01 00:36:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'asset'. The SQL statement executed was: SELECT `t`.`id_timeline` AS `t0_c0`, `t`.`headline` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`type` AS `t0_c3`, `t`.`id_asset` AS `t0_c4`, `date`.`id_date` AS `t1_c0`, `date`.`id_timeline` AS `t1_c1`, `date`.`id_asset` AS `t1_c2`, `date`.`id_user` AS `t1_c3`, `date`.`startDate` AS `t1_c4`, `date`.`endDate` AS `t1_c5`, `date`.`headline` AS `t1_c6`, `date`.`text` AS `t1_c7`, `date`.`tag` AS `t1_c8`, `date`.`classname` AS `t1_c9`, `asset`.`id_asset` AS `t2_c0`, `asset`.`media` AS `t2_c1`, `asset`.`credit` AS `t2_c2`, `asset`.`caption` AS `t2_c3`, `asset`.`id_asset` AS `t3_c0`, `asset`.`media` AS `t3_c1`, `asset`.`credit` AS `t3_c2`, `asset`.`caption` AS `t3_c3` FROM `timelines` `t`  LEFT OUTER JOIN `dates` `date` ON (`date`.`id_timeline`=`t`.`id_timeline`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`date`.`id_date`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`t`.`id_timeline`) .
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (138)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 00:36:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'asset'. The SQL statement executed was: SELECT `t`.`id_timeline` AS `t0_c0`, `t`.`headline` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`type` AS `t0_c3`, `t`.`id_asset` AS `t0_c4`, `date`.`id_date` AS `t1_c0`, `date`.`id_timeline` AS `t1_c1`, `date`.`id_asset` AS `t1_c2`, `date`.`id_user` AS `t1_c3`, `date`.`startDate` AS `t1_c4`, `date`.`endDate` AS `t1_c5`, `date`.`headline` AS `t1_c6`, `date`.`text` AS `t1_c7`, `date`.`tag` AS `t1_c8`, `date`.`classname` AS `t1_c9`, `asset`.`id_asset` AS `t2_c0`, `asset`.`media` AS `t2_c1`, `asset`.`credit` AS `t2_c2`, `asset`.`caption` AS `t2_c3`, `asset`.`id_asset` AS `t3_c0`, `asset`.`media` AS `t3_c1`, `asset`.`credit` AS `t3_c2`, `asset`.`caption` AS `t3_c3` FROM `timelines` `t`  LEFT OUTER JOIN `dates` `date` ON (`date`.`id_timeline`=`t`.`id_timeline`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`date`.`id_date`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`t`.`id_timeline`) ' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/10/01 00:36:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'asset'. The SQL statement executed was: SELECT `t`.`id_timeline` AS `t0_c0`, `t`.`headline` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`type` AS `t0_c3`, `t`.`id_asset` AS `t0_c4`, `date`.`id_date` AS `t1_c0`, `date`.`id_timeline` AS `t1_c1`, `date`.`id_asset` AS `t1_c2`, `date`.`id_user` AS `t1_c3`, `date`.`startDate` AS `t1_c4`, `date`.`endDate` AS `t1_c5`, `date`.`headline` AS `t1_c6`, `date`.`text` AS `t1_c7`, `date`.`tag` AS `t1_c8`, `date`.`classname` AS `t1_c9`, `asset`.`id_asset` AS `t2_c0`, `asset`.`media` AS `t2_c1`, `asset`.`credit` AS `t2_c2`, `asset`.`caption` AS `t2_c3`, `asset`.`id_asset` AS `t3_c0`, `asset`.`media` AS `t3_c1`, `asset`.`credit` AS `t3_c2`, `asset`.`caption` AS `t3_c3` FROM `timelines` `t`  LEFT OUTER JOIN `dates` `date` ON (`date`.`id_timeline`=`t`.`id_timeline`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`date`.`id_date`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`t`.`id_timeline`) .
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (138)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 00:36:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'asset'. The SQL statement executed was: SELECT `t`.`id_timeline` AS `t0_c0`, `t`.`headline` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`type` AS `t0_c3`, `t`.`id_asset` AS `t0_c4`, `date`.`id_date` AS `t1_c0`, `date`.`id_timeline` AS `t1_c1`, `date`.`id_asset` AS `t1_c2`, `date`.`id_user` AS `t1_c3`, `date`.`startDate` AS `t1_c4`, `date`.`endDate` AS `t1_c5`, `date`.`headline` AS `t1_c6`, `date`.`text` AS `t1_c7`, `date`.`tag` AS `t1_c8`, `date`.`classname` AS `t1_c9`, `asset`.`id_asset` AS `t2_c0`, `asset`.`media` AS `t2_c1`, `asset`.`credit` AS `t2_c2`, `asset`.`caption` AS `t2_c3`, `asset`.`id_asset` AS `t3_c0`, `asset`.`media` AS `t3_c1`, `asset`.`credit` AS `t3_c2`, `asset`.`caption` AS `t3_c3` FROM `timelines` `t`  LEFT OUTER JOIN `dates` `date` ON (`date`.`id_timeline`=`t`.`id_timeline`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`date`.`id_date`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`t`.`id_timeline`) ' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/10/01 00:37:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'asset'. The SQL statement executed was: SELECT `t`.`id_timeline` AS `t0_c0`, `t`.`headline` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`type` AS `t0_c3`, `t`.`id_asset` AS `t0_c4`, `date`.`id_date` AS `t1_c0`, `date`.`id_timeline` AS `t1_c1`, `date`.`id_asset` AS `t1_c2`, `date`.`id_user` AS `t1_c3`, `date`.`startDate` AS `t1_c4`, `date`.`endDate` AS `t1_c5`, `date`.`headline` AS `t1_c6`, `date`.`text` AS `t1_c7`, `date`.`tag` AS `t1_c8`, `date`.`classname` AS `t1_c9`, `asset`.`id_asset` AS `t2_c0`, `asset`.`media` AS `t2_c1`, `asset`.`credit` AS `t2_c2`, `asset`.`caption` AS `t2_c3`, `asset`.`id_asset` AS `t3_c0`, `asset`.`media` AS `t3_c1`, `asset`.`credit` AS `t3_c2`, `asset`.`caption` AS `t3_c3` FROM `timelines` `t`  LEFT OUTER JOIN `dates` `date` ON (`date`.`id_timeline`=`t`.`id_timeline`)  LEFT OUTER JOIN `assets` `asset` ON (`date`.`id_asset`=`asset`.`id_asset`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`t`.`id_timeline`) .
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (138)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 00:37:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'asset'. The SQL statement executed was: SELECT `t`.`id_timeline` AS `t0_c0`, `t`.`headline` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`type` AS `t0_c3`, `t`.`id_asset` AS `t0_c4`, `date`.`id_date` AS `t1_c0`, `date`.`id_timeline` AS `t1_c1`, `date`.`id_asset` AS `t1_c2`, `date`.`id_user` AS `t1_c3`, `date`.`startDate` AS `t1_c4`, `date`.`endDate` AS `t1_c5`, `date`.`headline` AS `t1_c6`, `date`.`text` AS `t1_c7`, `date`.`tag` AS `t1_c8`, `date`.`classname` AS `t1_c9`, `asset`.`id_asset` AS `t2_c0`, `asset`.`media` AS `t2_c1`, `asset`.`credit` AS `t2_c2`, `asset`.`caption` AS `t2_c3`, `asset`.`id_asset` AS `t3_c0`, `asset`.`media` AS `t3_c1`, `asset`.`credit` AS `t3_c2`, `asset`.`caption` AS `t3_c3` FROM `timelines` `t`  LEFT OUTER JOIN `dates` `date` ON (`date`.`id_timeline`=`t`.`id_timeline`)  LEFT OUTER JOIN `assets` `asset` ON (`date`.`id_asset`=`asset`.`id_asset`)  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`t`.`id_timeline`) ' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/10/01 00:40:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'asset'. The SQL statement executed was: SELECT `t`.`id_timeline` AS `t0_c0`, `t`.`headline` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`type` AS `t0_c3`, `t`.`id_asset` AS `t0_c4`, `asset`.`id_asset` AS `t1_c0`, `asset`.`media` AS `t1_c1`, `asset`.`credit` AS `t1_c2`, `asset`.`caption` AS `t1_c3`, `date`.`id_date` AS `t2_c0`, `date`.`id_timeline` AS `t2_c1`, `date`.`id_asset` AS `t2_c2`, `date`.`id_user` AS `t2_c3`, `date`.`startDate` AS `t2_c4`, `date`.`endDate` AS `t2_c5`, `date`.`headline` AS `t2_c6`, `date`.`text` AS `t2_c7`, `date`.`tag` AS `t2_c8`, `date`.`classname` AS `t2_c9`, `asset`.`id_asset` AS `t3_c0`, `asset`.`media` AS `t3_c1`, `asset`.`credit` AS `t3_c2`, `asset`.`caption` AS `t3_c3` FROM `timelines` `t`  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`t`.`id_timeline`)  LEFT OUTER JOIN `dates` `date` ON (`date`.`id_timeline`=`t`.`id_timeline`)  LEFT OUTER JOIN `assets` `asset` ON (`date`.`id_asset`=`asset`.`id_asset`) .
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (138)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 00:40:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'asset'. The SQL statement executed was: SELECT `t`.`id_timeline` AS `t0_c0`, `t`.`headline` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`type` AS `t0_c3`, `t`.`id_asset` AS `t0_c4`, `asset`.`id_asset` AS `t1_c0`, `asset`.`media` AS `t1_c1`, `asset`.`credit` AS `t1_c2`, `asset`.`caption` AS `t1_c3`, `date`.`id_date` AS `t2_c0`, `date`.`id_timeline` AS `t2_c1`, `date`.`id_asset` AS `t2_c2`, `date`.`id_user` AS `t2_c3`, `date`.`startDate` AS `t2_c4`, `date`.`endDate` AS `t2_c5`, `date`.`headline` AS `t2_c6`, `date`.`text` AS `t2_c7`, `date`.`tag` AS `t2_c8`, `date`.`classname` AS `t2_c9`, `asset`.`id_asset` AS `t3_c0`, `asset`.`media` AS `t3_c1`, `asset`.`credit` AS `t3_c2`, `asset`.`caption` AS `t3_c3` FROM `timelines` `t`  LEFT OUTER JOIN `assets` `asset` ON (`asset`.`id_asset`=`t`.`id_timeline`)  LEFT OUTER JOIN `dates` `date` ON (`date`.`id_timeline`=`t`.`id_timeline`)  LEFT OUTER JOIN `assets` `asset` ON (`date`.`id_asset`=`asset`.`id_asset`) ' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/10/01 00:41:48 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "assetTime as aa" is not defined in active record class "Timeline".' in C:\wamp\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'assetTime as aa')
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Timeline), Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/10/01 01:01:02 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "date" is not defined in active record class "TimelineDate".' in C:\wamp\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(210): CActiveFinder->buildJoinTree(Object(CJoinElement), 'date')
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'date.asset')
+#2 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(TimelineDate), Array)
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\wamp\www\miapp\protected\controllers\TimelineController.php(138): CActiveRecord->findAll()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/10/01 01:01:17 [error] [php] Array to string conversion (C:\wamp\www\miapp\protected\controllers\TimelineController.php:144)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): TimelineController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): TimelineController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): TimelineController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/timeline/JsonTimeline
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (144)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 01:04:31 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "asset" is not defined in active record class "Timeline".' in C:\wamp\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'asset')
+#1 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Timeline), Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#5 C:\wamp\www\miapp\protected\controllers\TimelineController.php(136): CActiveRecord->find('id_timeline=?', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TimelineController->actionJsonTimeline()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('jsontimeline')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('timeline/JsonTi...')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\miapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/miapp/timeline/JsonTimeline
+---
+2013/10/01 01:04:43 [error] [php] Object of class Asset could not be converted to string (C:\wamp\www\miapp\protected\controllers\TimelineController.php:148)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): TimelineController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): TimelineController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): TimelineController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\miapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/miapp/timeline/JsonTimeline
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (148)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 01:09:01 [warning] [application] Failed to set unsafe attribute "tag" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 01:09:01 [warning] [application] Failed to set unsafe attribute "credit" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 01:09:01 [warning] [application] Failed to set unsafe attribute "caption" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 01:12:07 [warning] [application] Failed to set unsafe attribute "tag" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 01:12:07 [warning] [application] Failed to set unsafe attribute "credit" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 01:12:07 [warning] [application] Failed to set unsafe attribute "caption" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 01:17:49 [warning] [application] Failed to set unsafe attribute "tag" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 01:17:49 [warning] [application] Failed to set unsafe attribute "credit" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)
+2013/10/01 01:17:49 [warning] [application] Failed to set unsafe attribute "caption" of "DateForm".
+in C:\wamp\www\miapp\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\miapp\index.php (13)

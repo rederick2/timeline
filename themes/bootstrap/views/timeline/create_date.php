@@ -36,9 +36,18 @@ If you have business inquiries or other questions, please fill out the following
 
 	<?php echo $form->errorSummary($model); ?>
 
-    <?php echo $form->textFieldRow($model,'startDate' , array('placeholder' => 'aaaa , mm , dd')); ?>
+    <?php echo $form->dateRangeRow(
+            $model,
+            'rangeDate',
+            array(
+                //'hint' => 'Click inside! An even a date range field!.',
+                'prepend' => '<i class="icon-calendar"></i>',
+                'options' => array('format' => 'YYYY/MM/DD','callback' => 'js:function(start, end){console.log(start.toString("MMMM d, yyyy") + " - " + end.toString("MMMM d, yyyy"));}')
+            )
+        ); 
+    ?>
 
-    <?php echo $form->textFieldRow($model,'endDate' , array('placeholder' => 'aaaa , mm , dd')); ?>
+    <?php //echo $form->textFieldRow($model,'endDate' , array('placeholder' => 'aaaa , mm , dd')); ?>
 
     <?php echo $form->textFieldRow($model,'headline'); ?>
 

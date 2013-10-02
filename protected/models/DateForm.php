@@ -10,8 +10,8 @@ class DateForm extends CFormModel
 	public $id_timeline;
 	public $id_asset;
 	public $id_user;
-	public $startDate;
-	public $endDate;
+	public $rangeDate;
+	//public $endDate;
 	public $headline;
 	public $text;
 	public $tag;
@@ -30,7 +30,7 @@ class DateForm extends CFormModel
 	{
 		return array(
 			// name, email, subject and body are required
-			array('startDate, endDate, headline, text , media' , 'required'),
+			array('rangeDate, headline, text , media' , 'required'),
 			// verifyCode needs to be entered correctly
 			//array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
 		);

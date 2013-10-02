@@ -19,7 +19,7 @@ class SiteController extends Controller
             $app->language = $app->session['_lang'];
         }
 
-        //$app->language = 'fr';
+        $app->language = 'es';
     }
 
 	public function actions()
@@ -222,12 +222,19 @@ class SiteController extends Controller
 	}
 
 	public function actionUpload(){
-	    $file = CUploadedFile::getInstanceByName('file');
-	    // Do your business ... save on file system for example,
-	    // and/or do some db operations for example
-	    $file->saveAs('uploads/'.$file->getName());
-	    // return the new file path
-	    echo Yii::app()->baseUrl.'/uploads/'.$file->getName();
+		Yii::import("ext.EAjaxUpload.qqFileUploader");
+
+		$folder='uploads/';// folder for uploaded files
+		$allowedExtensions = array("jpg");//array("jpg","jpeg","gif","exe","mov" and etc...
+		$sizeLimit = 1 * 1024 * 1024;// maximum file size in bytes
+		$uploader = new qqFileUploader($allowedExtensions, $sizeLimit);
+		$result = $uploader->handleUpload($folder , true , Yii::app()->user->name.'_img_profile'); // funtion handleUpload($folder , $replace_file boolean, $newname)
+		$return = htmlspecialchars(json_encode($result), ENT_NOQUOTES);
+
+		$fileSize=filesize($folder.$result['filename']);//GETTING FILE SIZE
+		$fileName=$result['filename'];//GETTING FILE NAME
+
+		echo $return;// it's array
 	}
 
 	/**

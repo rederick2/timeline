@@ -1686,3 +1686,184 @@ Stack trace:
 REQUEST_URI=/timeline/site/site/timeline/
 HTTP_REFERER=http://localhost/timeline/site/index
 ---
+2013/10/02 16:21:30 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\timeline\protected\controllers\SiteController.php (243)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:21:33 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\timeline\protected\controllers\SiteController.php (243)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:21:33 [warning] [application] Failed to set unsafe attribute "rememberMe" of "LoginForm".
+in C:\wamp\www\timeline\protected\controllers\SiteController.php (250)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:51:26 [warning] [application] Error al establecer unsafe al atributo "tag" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:51:26 [warning] [application] Error al establecer unsafe al atributo "credit" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:51:26 [warning] [application] Error al establecer unsafe al atributo "caption" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:51:26 [error] [php] Undefined index: startDate (C:\wamp\www\timeline\protected\controllers\TimelineController.php:65)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): TimelineController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): TimelineController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): TimelineController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\timeline\index.php(13): CWebApplication->run()
+REQUEST_URI=/timeline/timeline/createDate
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (65)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:51:51 [warning] [application] Error al establecer unsafe al atributo "tag" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:51:51 [warning] [application] Error al establecer unsafe al atributo "credit" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:51:51 [warning] [application] Error al establecer unsafe al atributo "caption" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:55:12 [warning] [application] Error al establecer unsafe al atributo "tag" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:55:12 [warning] [application] Error al establecer unsafe al atributo "credit" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:55:12 [warning] [application] Error al establecer unsafe al atributo "caption" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:56:38 [warning] [application] Error al establecer unsafe al atributo "tag" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:56:38 [warning] [application] Error al establecer unsafe al atributo "credit" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:56:38 [warning] [application] Error al establecer unsafe al atributo "caption" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:57:43 [warning] [application] Error al establecer unsafe al atributo "tag" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:57:43 [warning] [application] Error al establecer unsafe al atributo "credit" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 16:57:43 [warning] [application] Error al establecer unsafe al atributo "caption" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 17:01:08 [warning] [application] Error al establecer unsafe al atributo "tag" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 17:01:08 [warning] [application] Error al establecer unsafe al atributo "credit" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 17:01:08 [warning] [application] Error al establecer unsafe al atributo "caption" de "DateForm".
+in C:\wamp\www\timeline\protected\controllers\TimelineController.php (50)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 17:19:57 [error] [php] Undefined index: filename (C:\wamp\www\timeline\protected\controllers\SiteController.php:234)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\timeline\index.php(13): CWebApplication->run()
+REQUEST_URI=/timeline/site/upload?PHPSESSID=o3ute39icn16om8uhb6tgtc972&YII_CSRF_TOKEN=aaba45f78d7ad4caee259b3cccf657d60697e164&qqfile=Chrysanthemum.jpg
+in C:\wamp\www\timeline\protected\controllers\SiteController.php (234)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 17:20:02 [error] [php] Undefined index: filename (C:\wamp\www\timeline\protected\controllers\SiteController.php:234)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\timeline\index.php(13): CWebApplication->run()
+REQUEST_URI=/timeline/site/upload?PHPSESSID=o3ute39icn16om8uhb6tgtc972&YII_CSRF_TOKEN=aaba45f78d7ad4caee259b3cccf657d60697e164&qqfile=Penguins.jpg
+in C:\wamp\www\timeline\protected\controllers\SiteController.php (234)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 17:20:21 [error] [php] Undefined index: filename (C:\wamp\www\timeline\protected\controllers\SiteController.php:234)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\timeline\index.php(13): CWebApplication->run()
+REQUEST_URI=/timeline/site/upload?PHPSESSID=o3ute39icn16om8uhb6tgtc972&YII_CSRF_TOKEN=aaba45f78d7ad4caee259b3cccf657d60697e164&qqfile=Jellyfish.jpg
+in C:\wamp\www\timeline\protected\controllers\SiteController.php (234)
+in C:\wamp\www\timeline\index.php (13)
+2013/10/02 19:35:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "uploads" solicitada.' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('uploads')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('uploads')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/uploads/De...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\timeline\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/timeline/site/uploads/Desert.jpg?1380742554773
+HTTP_REFERER=http://localhost/timeline/site/contact
+---
+2013/10/02 20:02:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/Tulips.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/Tulips....')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\timeline\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/timeline/uploads/Tulips.jpg?1380744139102
+HTTP_REFERER=http://localhost/timeline/site/contact
+---
+2013/10/02 20:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/Tulips.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/Tulips....')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\timeline\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/timeline/uploads/Tulips.jpg?1380744162124
+HTTP_REFERER=http://localhost/timeline/site/contact
+---
+2013/10/02 20:03:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/Chrysanthemum.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/Chrysan...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\timeline\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/timeline/uploads/Chrysanthemum.jpg?1380744212986
+HTTP_REFERER=http://localhost/timeline/site/contact
+---
+2013/10/02 20:07:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/Chrysanthemum.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/Chrysan...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\timeline\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/timeline/uploads/Chrysanthemum.jpg?1380744432447
+HTTP_REFERER=http://localhost/timeline/site/contact
+---
+2013/10/02 20:07:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/undefined".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/undefin...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\timeline\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/timeline/uploads/undefined?1380744460725
+HTTP_REFERER=http://localhost/timeline/site/contact
+---
+2013/10/02 20:08:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/undefined".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/undefin...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\timeline\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/timeline/uploads/undefined?1380744505679
+HTTP_REFERER=http://localhost/timeline/site/contact
+---
+2013/10/02 20:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/undefined".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/undefin...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\timeline\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/timeline/uploads/undefined?1380744578006
+HTTP_REFERER=http://localhost/timeline/site/contact
+---

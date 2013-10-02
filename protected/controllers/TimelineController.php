@@ -19,7 +19,7 @@ class TimelineController extends Controller
             $app->language = $app->session['_lang'];
         }
 
-        //$app->language = 'fr';
+        $app->language = 'es';
     }
 
 	public function actions()
@@ -62,12 +62,14 @@ class TimelineController extends Controller
 						$idUser = Yii::app()->user->getId();
 						$idTimeline = 1;
 
+						$dateRange = explode('-', $model->attributes['rangeDate']);
+
 						$date = new TimelineDate();
 						$date->id_timeline = $idTimeline;
 						$date->id_asset = $idAsset;
 						$date->id_user = $idUser;
-						$date->startDate = $model->attributes['startDate'];
-						$date->endDate = $model->attributes['endDate'];
+						$date->startDate = trim(str_replace('/' , ',' , $dateRange[0]) , ' ');
+						$date->endDate = trim(str_replace('/' , ',' , $dateRange[1]) , ' ');
 						$date->headline = $model->attributes['headline'];
 						$date->text = $model->attributes['text'] . ' <a href="'.Yii::app()->baseUrl.'/'.Yii::app()->user->name.'">by '.Yii::app()->user->name.'</a>';
 						$date->tag = $model->attributes['tag'];

@@ -9,6 +9,18 @@ $this->breadcrumbs=array(
 );
 ?>
 
+<?php
+
+/*$this->widget('ext.MjmChat.MjmChat', array(
+                'title'=>'Chat room',
+                'rooms'=>array('php'=>'PHP Room', 'html'=>'HTML Room'),
+                'host'=>'http://localhost',
+                'port'=>'3000',
+            )
+);*/
+
+?>
+
 <h1>Contact Us</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>

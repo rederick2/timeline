@@ -25,15 +25,15 @@ class FacebookController extends Controller
         } 
         else 
         {
-            if( empty($email) )
+            if( empty($username) )
             {
-                echo json_encode(array('error'=>'email is not provided'));
+                echo json_encode(array('error'=>'username is not provided'));
                 die();
             }
             if( $session == Yii::app()->session->sessionID )
             {
             
-                $user = User::prepareUserForAuthorisation( $email );
+                $user = User::prepareUserForAuthorisation( $username );
 
                 $fb=Yii::app()->facebook;
                 //$token=$fb->getAccessToken();

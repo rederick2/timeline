@@ -46,8 +46,13 @@ return array(
         ),
 		'user'=>array(
 			// enable cookie-based authentication
+			//'class' => 'ext.yii-vNotifier.NotifiedWebUser',
 			'allowAutoLogin'=>true,
 		),
+		'notifier' => array(
+		      'class' => 'ext.yii-vNotifier.VNotifier',
+		      'appSecret' => ''
+		  ),
 		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(

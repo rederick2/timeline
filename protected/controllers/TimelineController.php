@@ -71,7 +71,7 @@ class TimelineController extends Controller
 						$date->startDate = trim(str_replace('/' , ',' , $dateRange[0]) , ' ');
 						$date->endDate = trim(str_replace('/' , ',' , $dateRange[1]) , ' ');
 						$date->headline = $model->attributes['headline'];
-						$date->text = $model->attributes['text'] . ' <a href="'.Yii::app()->baseUrl.'/'.Yii::app()->user->name.'">by '.Yii::app()->user->name.'</a>';
+						$date->text = $model->attributes['text'] . ' <a target="_parent" href="'.Yii::app()->baseUrl.'/'.Yii::app()->user->name.'">by '.Yii::app()->user->name.'</a>';
 						$date->tag = $model->attributes['tag'];
 
 						if($date->save()){

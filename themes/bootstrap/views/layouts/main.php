@@ -42,6 +42,7 @@
                 array('label'=>'Timeline', 'url'=>array('/site/timeline')),
                 array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest , 'itemOptions' => array('data-toggle' =>'modal' , 'data-target'=>'#loginModal')),
                 array('label'=>Yii::app()->user->name, 'visible'=>!Yii::app()->user->isGuest , 'items' => array(
+                    array('label'=>'Profile', 'url'=>array('/'.Yii::app()->user->name)),
                     array('label'=>'Edit Profile', 'url'=>array('/site/editProfile')),
                     array('label'=>'Crear Fecha', 'url'=>array('/timeline/createDate')),
                     array('label'=>'Logout', 'url'=>array('/site/logout'))
@@ -125,6 +126,22 @@
 	</div><!-- footer -->
 
 </div><!-- page -->
+
+<script src="/timeline/assets/lib/masonry.pkgd.min.js"></script>
+<script type="text/javascript">
+
+    var container = document.querySelector('.row');
+
+    if(container){
+        var msnry = new Masonry( container, {
+                      // options
+                      //columnWidth: 200,
+                      itemSelector: '.span3'
+                    });
+    }
+    
+
+</script>
 
 </body>
 </html>

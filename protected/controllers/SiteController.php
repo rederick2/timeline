@@ -46,20 +46,14 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$result = array(
-		    array("id"=>1, "firstName"=>"Mark", "lastName"=>"Otto", "language"=>"CSS"),
-		    array("id"=>2, "firstName"=>"Jacob", "lastName"=>"Thornton", "language"=>"JavaScript"),
-		    array("id"=>3, "firstName"=>"Stu", "lastName"=>"Dent", "language"=>"HTML")
-		);
-
 		$model=new LoginForm;
 
 		//print_r($result);
 
-		$gridDataProvider = new CArrayDataProvider($result);
+		$dates = TimelineDate::model()->with('user', 'asset')->findAll();
 
 		$params =array(
-           'gridDataProvider'=>$gridDataProvider,
+           'dates'=>$dates,
            'model' => $model
        	);
 
@@ -83,28 +77,37 @@ class SiteController extends Controller
 		echo $_GET['id'];
 	}
 
+	public function actionSend() {
+		$message = Yii::app()->request->getPost('message');
+		$to = Yii::app()->request->getPost('to');
+		if($message && $to) {
+			if($to == 'broadcast') {
+				Yii::app()->notifier->broadcast($message);
+			} else {
+				Yii::app()->notifier->send($to, $message);
+			}
+			Yii::app()->end();
+		}
+
+		Yii::app()->clientScript->registerCoreScript('jquery');
+		$this->render('send');
+	}
+
 	public function actionUser()
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$result = array(
-		    array("id"=>1, "firstName"=>$_GET['user'], "lastName"=>"Otto", "language"=>"CSS"),
-		    array("id"=>2, "firstName"=>"Jacob", "lastName"=>"Thornton", "language"=>"JavaScript"),
-		    array("id"=>3, "firstName"=>"Stu", "lastName"=>"Dent", "language"=>"HTML")
-		);
 
-		$model=new LoginForm;
+		//$dates->with('user')->find('LOWER(username)=?',array($_GET['user']));
+		$dates = TimelineDate::model()->with('user', 'asset')->findAll('LOWER(username)=?',array($_GET['user']));
 
-		//print_r($result);
-
-		$gridDataProvider = new CArrayDataProvider($result);
+		//$arr = CJSON::encode(TimelineDate::convertModelToArray($dates));
 
 		$params =array(
-           'gridDataProvider'=>$gridDataProvider,
-           'model' => $model
+           'user' => array('dates' => $dates)
        	);
 
-		$this->render('index' , $params);
+		$this->render('profile' , $params);
 	}
 
 	/**

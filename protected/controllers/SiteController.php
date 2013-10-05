@@ -49,12 +49,21 @@ class SiteController extends Controller
 		$model=new LoginForm;
 
 		//print_r($result);
+		$criteria = new CDbCriteria;
+        $total = TimelineDate::model()->count();
 
-		$dates = TimelineDate::model()->with('user', 'asset')->findAll();
+        $pages = new CPagination($total);
+        $pages->pageSize = 6;
+        $pages->applyLimit($criteria);
+
+		$dates = TimelineDate::model()->with('user', 'asset')->findAll($criteria);
+
+		print_r($pages);
 
 		$params =array(
            'dates'=>$dates,
-           'model' => $model
+           'model' => $model,
+           'pages' => $pages
        	);
 
 		$this->render('index' , $params);

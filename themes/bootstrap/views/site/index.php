@@ -12,7 +12,7 @@ $this->widget('ext.timeago.JTimeAgo', array('selector' => ' .timeago',));
 
 <?php
 
-	echo '<div class="row">';
+	echo '<div class="row" class="js-masonry" data-masonry-options="{ \"columnWidth\": 200, \"itemSelector\": ".item" }">';
 
 ?>
 
@@ -26,12 +26,36 @@ $this->widget('ext.timeago.JTimeAgo', array('selector' => ' .timeago',));
 
 <?php }; ?>
 
+<?php $this->widget('ext.yiinfinite-scroll.YiinfiniteScroller', array(
+    'contentSelector' => '.row',
+    'itemSelector' => 'div.span3',
+    'loadingText' => 'Loading...',
+    'donetext' => 'This is the end... my only friend, the end',
+    'pages' => $pages,
+    'callback' => 'function( newElements ) {
+                    var container = document.querySelector(".row");
+
+                    $(".timeago").timeago();
+
+				    if(container){
+				        var msnry = new Masonry( container, {
+				                      // options
+				                      //columnWidth: 200,
+				                      itemSelector: ".span3"
+				                    });
+				    }
+                }',
+)); ?>
+
 
 <?php
 
 	echo '</div>';
 
 ?>
+
+
+
 
 
 
